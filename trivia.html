@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trivia F1</title>
+  <link rel="stylesheet" href="trivia.css" />
+</head>
+<body>
+  <h1>Trivia de Fórmula 1</h1>
+
+  <div id="intro">
+    <p>¡Bienvenido a la trivia de F1! Aquí encontrarás preguntas sobre Fórmula 1 para poner a prueba tus conocimientos.</p>
+  </div>
+
+  <h2 id="mensaje-bienvenida"></h2>
+
+  <button id="btnTrivia">Comenzar Trivia</button>
+
+  <!-- Semáforo -->
+  <div id="semaforo" class="semaforo">
+    <div class="luz rojo"></div>
+    <div class="luz amarillo"></div>
+    <div class="luz verde"></div>
+  </div>
+
+  <!-- Pregunta dinámica -->
+  <div class="contenedor-trivia" style="display: none;">
+    <div id="pregunta-actual" class="pregunta"></div>
+    <button id="btnSiguiente" style="display: none;">Siguiente</button>
+    <div id="final-trivia" style="display: none;">
+      <button id="btnReiniciar">Reiniciar trivia</button>
+      <button id="btnVolver">Volver al blog</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
