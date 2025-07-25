@@ -21,10 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
       correcta: 2
     }
   ];
-
+if (window.location.pathname.includes("trivia.html")) {
   const nombre = prompt("¿Cuál es tu nombre?");
   const mensaje = document.getElementById("mensaje-bienvenida");
   mensaje.textContent = `¡Hola ${nombre}! Prepárate para comenzar.`;
+}
 
   const btn = document.getElementById("btnTrivia");
   const semaforo = document.getElementById("semaforo");
